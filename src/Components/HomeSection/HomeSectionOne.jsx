@@ -8,7 +8,7 @@ const HomeSectionOne=()=>{
 
     return(
         <div>
-            <p>Home</p>
+        
         </div>
     )
 }
