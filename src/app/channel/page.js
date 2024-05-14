@@ -7,7 +7,7 @@ const page=()=>{
   
   return(
     <div>
-
+        <p>Channels</p>
     </div>
   )
 }

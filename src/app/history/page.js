@@ -7,7 +7,7 @@ const page=()=>{
   
   return(
     <div>
-
+        <p>History</p>
     </div>
   )
 }

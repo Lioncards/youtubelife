@@ -7,7 +7,7 @@ const page=()=>{
   
   return(
     <div>
-
+        <p>Subscriptions</p>
     </div>
   )
 }
