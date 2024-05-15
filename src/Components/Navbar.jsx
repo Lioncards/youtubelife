@@ -18,7 +18,7 @@ const Navbar=()=>{
                 <div className="flex items-center w-full gap-7">
                     <HiMiniBars3  className="text-xl"/>
                     <div className="flex items-center">
-                        <Image src={image1} className="w-12"/>
+                        <Image src={image1} className= "w-12"/>
                         <p className="font-extrabold text-lg">YouTube</p>
                     </div>
                 </div>
