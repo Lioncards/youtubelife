@@ -10,8 +10,8 @@ const page=()=>{
   
   return(
     <div>
-        <Navbar/>
         <SideBar/>
+        <Navbar/>
     </div>
   )
 }

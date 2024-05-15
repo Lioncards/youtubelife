@@ -14,9 +14,9 @@ const Navbar=()=>{
 
     return(
         <div>
-            <div className="flex items-center px-7 py-2">
+            <div className="flex items-center pl-20 py-2 px-7">
                 <div className="flex items-center w-full gap-7">
-                    <HiMiniBars3  className="text-xl"/>
+
                     <div className="flex items-center">
                         <Image src={image1} className= "w-12"/>
                         <p className="font-extrabold text-lg">YouTube</p>
