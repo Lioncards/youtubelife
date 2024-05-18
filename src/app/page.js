@@ -12,6 +12,7 @@ const page=()=>{
     <div>
         <SideBar/>
         <Navbar/>
+        <HomeSectionOne/>
     </div>
   )
 }
