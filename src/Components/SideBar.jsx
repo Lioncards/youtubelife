@@ -66,73 +66,77 @@ const SideBar=()=>{
                     </div>
                 </div>
 
-                <div className="grid w-64 absolute top-20 bg-pink-500 fixed overflow-y-auto h-screen pb-20 pl-7">
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><IoHome className="text-2xl"/><IoHomeOutline className="text-2xl"/>Home</p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><SiYoutubeshorts className="text-2xl"/>Shorts</p>
-                    <p className="flex items-center gap-3 text-base pb-4 font-semibold"><MdSubscriptions className="text-2xl"/><MdOutlineSubscriptions className="text-2xl"/>Subscriptions</p>
-                    <hr></hr>
+                <div className="grid w-64 absolute top-20 fixed overflow-y-auto h-screen pb-20 pl-7 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-black">
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><IoHome className="text-2xl"/><IoHomeOutline className="text-2xl"/>Home</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><SiYoutubeshorts className="text-2xl"/>Shorts</p>
+                    <p className="flex items-center gap-3 text-sm pb-4 font-normal"><MdSubscriptions className="text-2xl"/><MdOutlineSubscriptions className="text-2xl"/>Subscriptions</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
 
-                    <p className="flex items-center gap-3 text-base pb-2 pt-4 font-semibold">You<MdKeyboardArrowRight className="text-xl" /></p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><LiaIdCardSolid className="text-2xl" />Your Channel</p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><GoHistory className="text-2xl" />History</p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><MdOutlinePlaylistPlay className="text-2xl" />Playlists</p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><LiaFileVideoSolid className="text-2xl" />Your Videos</p>
-                    <p className="flex items-center gap-3 text-base pb-2 font-semibold"><GoClock className="text-2xl" />Watch Later</p>
-                    <p className="flex items-center gap-3 text-base pb-4 font-semibold"><BiLike className="text-2xl" />Liked Videos</p>
-                    <hr></hr>
-                    <p className="flex items-center gap-3 text-base pb-2 pt-4 font-semibold">Subscriptions</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 pt-4 font-semibold">You<MdKeyboardArrowRight className="text-xl" /></p>
 
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
-                    <p className="flex items-center gap-3 text-base pb-4 font-semibold"><MdKeyboardArrowDown/>Show More</p>
-                    <hr></hr>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><LiaIdCardSolid className="text-2xl" />Your Channel</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><GoHistory className="text-2xl" />History</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><MdOutlinePlaylistPlay className="text-2xl" />Playlists</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><LiaFileVideoSolid className="text-2xl" />Your Videos</p>
+                    <p className="flex items-center gap-3 text-sm pb-3 font-normal"><GoClock className="text-2xl" />Watch Later</p>
+                    <p className="flex items-center gap-3 text-sm pb-4 font-normal"><BiLike className="text-2xl" />Liked Videos</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
 
-                    <p className="pt-4 gap-3 font-semibold pb-2">Explore</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><BsFire className="text-2xl" />Trending</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><SlMusicToneAlt className="text-2xl" />Music</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubegaming className="text-2xl" />Gaming</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><IoNewspaperOutline className="text-2xl" />News</p>
-                    <p className="flex items-center gap-3 font-semibold pb-4"><CiTrophy className="text-2xl" />Sports</p>
-                    <hr></hr>
+                    <p className="flex items-center gap-3 text-sm pb-3 pt-4 font-semibold">Subscriptions</p>
 
-                    <p className="pt-4 gap-3 font-semibold pb-2">More from Youtube</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubemusic className="text-2xl" />Youtube Music </p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubemusic className="text-2xl" />Youtube Premium </p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubekids className="text-2xl" />Youtube Kids </p>
-                    <p className="flex items-center gap-3 font-semibold pb-4"><SiYoutubekids className="text-2xl" />Youtube Studio</p>
-                    <hr></hr>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-sm text-base pb-4 font-normal"><MdKeyboardArrowDown/>Show More</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
 
-                    <p className="flex items-center gap-3 font-semibold pb-2 pt-4"><CiSettings className="text-2xl" />Settings</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><BsFlag className="text-2xl" />Report History</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><IoHelpCircleOutline className="text-2xl" />Help</p>
-                    <p className="flex items-center gap-3 font-semibold pb-2"><MdOutlineFeedback className="text-2xl" />Send Feedback</p>
-                    <hr></hr>
+                    <p className="pt-4 gap-3 font-normal pb-2">Explore</p>
 
-                    <ul className="grid grid-cols-4 grid-row-3 pt-4">
-                        <li className="text-sm font-semibold">About</li>
-                        <li className="text-sm font-semibold">Press</li>
-                        <li className="text-sm col-span-2 font-semibold">Copyright</li>
-                        <li className="text-sm col-span-2 font-semibold">Contact Us</li>
-                        <li className="col-span-2 text-sm font-semibold">Creators</li>
-                        <li className=" text-sm col-span-2 font-semibold">Advertise</li>
-                        <li className="text-sm col-span-2 font-semibold">Developers</li>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><BsFire className="text-2xl" />Trending</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><SlMusicToneAlt className="text-2xl" />Music</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><SiYoutubegaming className="text-2xl" />Gaming</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><IoNewspaperOutline className="text-2xl" />News</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-4"><CiTrophy className="text-2xl" />Sports</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
+
+                    <p className="pt-4 gap-3 font-normal pb-2">More from Youtube</p>
+
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><SiYoutubemusic className="text-2xl" />Youtube Music </p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><SiYoutubemusic className="text-2xl" />Youtube Premium </p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><SiYoutubekids className="text-2xl" />Youtube Kids </p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-4"><SiYoutubekids className="text-2xl" />Youtube Studio</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
+
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3 pt-4"><CiSettings className="text-2xl" />Settings</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><BsFlag className="text-2xl" />Report History</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><IoHelpCircleOutline className="text-2xl" />Help</p>
+                    <p className="flex items-center gap-3 text-sm font-normal pb-3"><MdOutlineFeedback className="text-2xl" />Send Feedback</p>
+                    <hr className="relative right-10 w-64 border-gray-600"></hr>
+
+                    <ul className="grid grid-cols-4 grid-row-3 pt-4 w-52">
+                        <li className="text-sm font-normal text-gray-400">About</li>
+                        <li className="text-sm font-normal text-gray-400">Press</li>
+                        <li className="text-sm col-span-2 font-normal text-gray-400">Copyright</li>
+                        <li className="text-sm col-span-2 font-normal text-gray-400">Contact Us</li>
+                        <li className="col-span-2 text-sm font-normal text-gray-400">Creators</li>
+                        <li className=" text-sm col-span-2 font-normal text-gray-400">Advertise</li>
+                        <li className="text-sm col-span-2 font-normal text-gray-400">Developers</li>
                     </ul>
 
-                    <ul>
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                        <li>Policy & Safety</li>
-                        <li>How YOutube Works</li>
-                        <li>Test New Features</li>
+                    <ul className="grid grid-cols-4 grid-row-3 pt-4 w-52">
+                        <li className="text-sm font-normal text-gray-400">Terms</li>
+                        <li className="text-sm font-normal relative right-1 text-gray-400">Privacy</li>
+                        <li className="text-sm font-normal col-span-2 text-gray-400">Policy & Safety</li>
+                        <li className="text-sm font-normal col-span-4 text-gray-400">How Youtube Works</li>
+                        <li className="text-sm font-normal col-span-4 text-gray-400">Test New Features</li>
                     </ul>
 
-                    <p><MdCopyright />2024 Google LLC</p>
+                    <p className="flex text-xs items-center pt-4 text-gray-500"><MdCopyright className="text-sm"/>2024 Google LLC</p>
                 </div>
             </div>
 
