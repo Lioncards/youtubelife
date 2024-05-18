@@ -31,7 +31,7 @@ import { BsFlag } from "react-icons/bs";
 import { IoHelpCircleOutline } from "react-icons/io5";
 import { MdOutlineFeedback } from "react-icons/md";
 import { MdCopyright } from "react-icons/md";
-import {sdsimage} from '@/Components/Images/1-intro-photo-final.jpg'
+import sdsimage from '@/Components/Images/1-intro-photo-final.jpg'
 
 const SideBar=()=>{
 
@@ -66,7 +66,7 @@ const SideBar=()=>{
                     </div>
                 </div>
 
-                <div className="grid w-60 absolute top-20 bg-pink-500 fixed overflow-y-auto h-screen pb-20 pl-7">
+                <div className="grid w-64 absolute top-20 bg-pink-500 fixed overflow-y-auto h-screen pb-20 pl-7">
                     <p className="flex items-center gap-3 text-base pb-2 font-semibold"><IoHome className="text-2xl"/><IoHomeOutline className="text-2xl"/>Home</p>
                     <p className="flex items-center gap-3 text-base pb-2 font-semibold"><SiYoutubeshorts className="text-2xl"/>Shorts</p>
                     <p className="flex items-center gap-3 text-base pb-4 font-semibold"><MdSubscriptions className="text-2xl"/><MdOutlineSubscriptions className="text-2xl"/>Subscriptions</p>
@@ -80,47 +80,48 @@ const SideBar=()=>{
                     <p className="flex items-center gap-3 text-base pb-2 font-semibold"><GoClock className="text-2xl" />Watch Later</p>
                     <p className="flex items-center gap-3 text-base pb-4 font-semibold"><BiLike className="text-2xl" />Liked Videos</p>
                     <hr></hr>
-                    <p className="flex items-center gap-3 text-base pb-4 pt-4 font-semibold">Subscriptions</p>
+                    <p className="flex items-center gap-3 text-base pb-2 pt-4 font-semibold">Subscriptions</p>
 
-                    <p><Image src={sdsimage} className="w-40 rounded"/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><Image/>ZChannel</p>
-                    <p><MdKeyboardArrowDown />Show More</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><Image src={sdsimage} className="w-6 h-6 rounded-full"/>ZChannel</p>
+                    <p className="flex items-center gap-3 text-base pb-4 font-semibold"><MdKeyboardArrowDown/>Show More</p>
+                    <hr></hr>
 
-                    <p>Explore</p>
-                    <p><BsFire />Trending</p>
-                    <p><SlMusicToneAlt />Music</p>
-                    <p><SiYoutubegaming />Gaming</p>
-                    <p><IoNewspaperOutline />News</p>
-                    <p><CiTrophy />Sports</p>
+                    <p className="pt-4 gap-3 font-semibold pb-2">Explore</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><BsFire className="text-2xl" />Trending</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><SlMusicToneAlt className="text-2xl" />Music</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubegaming className="text-2xl" />Gaming</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><IoNewspaperOutline className="text-2xl" />News</p>
+                    <p className="flex items-center gap-3 font-semibold pb-4"><CiTrophy className="text-2xl" />Sports</p>
+                    <hr></hr>
 
-                    <p>More from Youtube</p>
-                    <p><SiYoutubemusic />Youtube Music </p>
-                    <p><SiYoutubemusic />Youtube Premium </p>
-                    <p><SiYoutubekids />Youtube Kids </p>
-                    <p><SiYoutubekids />Youtube Studio</p>
+                    <p className="pt-4 gap-3 font-semibold pb-2">More from Youtube</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubemusic className="text-2xl" />Youtube Music </p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubemusic className="text-2xl" />Youtube Premium </p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><SiYoutubekids className="text-2xl" />Youtube Kids </p>
+                    <p className="flex items-center gap-3 font-semibold pb-4"><SiYoutubekids className="text-2xl" />Youtube Studio</p>
+                    <hr></hr>
 
-                    <p><CiSettings />Settings</p>
-                    <p><BsFlag />Report History</p>
-                    <p><IoHelpCircleOutline />Help</p>
-                    <p><MdOutlineFeedback />Send Feedback</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2 pt-4"><CiSettings className="text-2xl" />Settings</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><BsFlag className="text-2xl" />Report History</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><IoHelpCircleOutline className="text-2xl" />Help</p>
+                    <p className="flex items-center gap-3 font-semibold pb-2"><MdOutlineFeedback className="text-2xl" />Send Feedback</p>
+                    <hr></hr>
 
-                    <ul>
-                        <li>About</li>
-                        <li>Press</li>
-                        <li>Copyright</li>
-                        <li>Contact Us</li>
-                        <li>Creators</li>
-                        <li>Advertise</li>
-                        <li>Developers</li>
+                    <ul className="grid grid-cols-4 grid-row-3 pt-4">
+                        <li className="text-sm font-semibold">About</li>
+                        <li className="text-sm font-semibold">Press</li>
+                        <li className="text-sm col-span-2 font-semibold">Copyright</li>
+                        <li className="text-sm col-span-2 font-semibold">Contact Us</li>
+                        <li className="col-span-2 text-sm font-semibold">Creators</li>
+                        <li className=" text-sm col-span-2 font-semibold">Advertise</li>
+                        <li className="text-sm col-span-2 font-semibold">Developers</li>
                     </ul>
 
                     <ul>
