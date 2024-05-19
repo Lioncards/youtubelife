@@ -1,51 +1,58 @@
 'use client'
 
-import React from "react"
+import React, { useRef } from "react"
 import { useState } from "react"
 import Image from "next/image"
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 const HomeSectionOne=()=>{
-
-    const [isScrolling, setIsScrolling] = useState(false);
-
-    const handleScroll = () => {
-        setIsScrolling(!isScrolling);
+    const scrollContainerRef = useRef(null);
+    
+    const scroll = (scrollOffset) => {
+        scrollContainerRef.current.scrollBy({
+        top: 0,
+        left: scrollOffset,
+        behavior: 'smooth',
+        });
     };
 
     return(
         <div>
             <div className="ml-24 flex items-center pt-3">
-                <ul className={`flex gap-3 items-center overflow-hidden ${isScrolling ? 'animate-scroll' : ''}`}>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm">All</li>
-                </ul>
 
-                <MdKeyboardArrowRight onClick={handleScroll} className="text-3xl " />
+                <MdKeyboardArrowLeft onClick={() => scroll(-100)} className="text-3xl z-10" />
+
+                <ul ref={scrollContainerRef} className="flex gap-3 items-center overflow-auto scrollbar-hide">
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">dkjv wvjwn</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                    <li className="border-0 rounded-lg bg-gray-500 px-4 py-2 font-semibold text-sm whitespace-nowrap">All</li>
+                </ul>
+                
+                <MdKeyboardArrowRight onClick={() => scroll(100)} className="text-3xl z-10" />
             </div>
         </div>
     )
